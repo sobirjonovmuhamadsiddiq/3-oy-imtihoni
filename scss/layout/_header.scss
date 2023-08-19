@@ -1,0 +1,76 @@
+.header {
+    background-color: $WHITE-color;
+}
+.heder_container {
+    padding-top: 6.7rem;
+    padding-bottom: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sitenav_link{
+    display: flex;
+    gap: 42px;
+}
+.sitenav_text{
+    color: $DARK-GREY-color;
+    transition: 0.6s;
+}
+
+
+
+li {
+    margin-bottom: 10px;
+}
+
+.sitenav_text {
+    display: inline-block;
+    color: $DARK-GREY-color;
+    text-decoration: none;
+    font-family: $body-ff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-align: left;
+
+}
+
+.sitenav_text::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: $DARK-GREY-color;
+    transition: width .3s;
+}
+
+.sitenav_text:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.heder_btn{
+    background-color: $WHITE-color;
+    border: 0;
+ 
+}
+
+@media screen and (max-width:678px) {
+    .sitenav{
+        display: none;
+    }
+}
+@media screen {
+    .heder_btn{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:678px) {
+    .heder_btn{
+        display: inline-block;
+    }
+}

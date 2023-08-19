@@ -1,0 +1,143 @@
+.main {
+color: $WHITE-color;
+}
+.part{
+    display: flex;
+    background-color: $Peach-color;
+    border-radius: 15px;
+    background-image: url('../images/Oval.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    padding-left: 9.5rem;
+    justify-content: space-between;
+.main_part1{
+     width:540px ; 
+     height: 350px;  
+}
+}
+
+
+ .main_title {
+    color: $WHITE-color;
+ }
+ .main_text {
+    color: $WHITE-color;
+
+}
+
+@media screen and (max-width:900px) {
+    .main_part1{
+    text-align: center;
+    }
+    .part{
+        flex-direction: column;
+        background-position: center;
+    }
+    .main_img{
+        width: 251px;
+        height: 542px;
+    }
+}
+
+@media screen and (max-width:1015px) {
+    .main_part1{
+      width: 100%;
+      max-width: 500px;  
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main_part1{
+        text-align: center;
+      width: 100%;
+      max-width: 400px;
+      margin-right: 1rem;
+      
+    }    
+    .main_img{
+        max-width: 279px;
+        width: 100%;
+        padding:3rem 2rem ;
+    }
+}
+
+@media screen and (max-width:653) {
+    .main_part1{
+        text-align: center;
+      width: 100%;
+      max-width: 400px;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+    }    
+    .main_img{
+        max-width: 279px;
+        width: 100%;
+        padding:3rem 2rem ;
+        margin-top: 2rem;
+    }
+}
+
+.galery_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Kampyuter.png');
+    background-repeat: no-repeat;
+    width: 541px;
+    height: 640px;
+ }
+.galarey__description{
+display: flex;
+flex-direction: column;
+}
+.galery_title {
+   color: $WHITE-color;
+font-size: 40px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: 2px;
+text-align: left;
+
+}
+.galery_link {
+    color:$WHITE-color ;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-align: left;
+    background-image: url('../images/strelka.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.galery_section_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/Bitmap.png');
+    background-repeat: no-repeat;
+    width: 541px;
+    height:308px;
+}
+.galery_section_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/dizayn.png');
+    background-repeat: no-repeat;
+    width: 541px;
+    height:308px;
+    margin-top: 2.4rem;
+}
+
+.galary-part{
+    flex-direction: column;
+}
+.galary{
+    display: flex;
+    justify-content: center;
+    margin-top: 16rem;
+    gap: 3rem ;
+}
