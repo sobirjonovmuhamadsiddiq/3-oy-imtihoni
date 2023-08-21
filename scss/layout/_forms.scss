@@ -19,13 +19,13 @@ color: $WHITE-color;
 }
 
 
- .main_title {
+ .title {
     color: $WHITE-color;
     width: 100%;
     max-width: 540px;
     font-family: $body-ff;
  }
- .main_text {
+ .text {
     color: $WHITE-color;
      width: 100%;
      max-width: 445px;
@@ -159,6 +159,7 @@ text-align: left;
 
 @media screen and (max-width:980px) {
     .galary{
+        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content:center ;
@@ -191,8 +192,8 @@ text-align: left;
       align-items: center;
       justify-content: center;
       .galery_section{
-        max-width: 689;
-        height: 200px ;
+        max-width: 689px;
+        // height: 200px ;
       }
     }
     .galery_section{
@@ -202,6 +203,8 @@ text-align: left;
         
         border-radius: 24px;
         background-image: url('../../images/Bitmap\ \(1\).png');
+        background-repeat: no-repeat;
+        background-size: contain;
        
     }
     .galery_section_top{
@@ -230,28 +233,71 @@ text-align: left;
 
 
 
-.Persons {
+.persons {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-image: url('../../images/Rectangle.png');
     background-repeat: no-repeat;
     background-position: right;
+    gap: 3rem;
+    
 }
 .person_one {
+    width: 100%;
+    max-width: 350px;
     padding-top: 16rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: center;
+    p{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+
 }
 .person_two {
-padding-top: 16rem;
+ width: 100%;
+    max-width: 350px;
+    padding-top: 16rem;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: center;
+    p{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
 }
 .person_three {
+    
+    
+    width: 100%;
+    max-width: 350px;
     padding-top: 16rem;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     text-align: center;
+    p{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+       
+    }   
 }
 
 .humans_title {
@@ -276,8 +322,39 @@ padding-top: 16rem;
     margin-bottom: 48px;
     
 }
+.piple_two{
+    margin-left: 104px;
+    margin-bottom: 48px;
+}
 
+.piple_three{
+    margin-left: 104px;
+    margin-bottom: 48px;
+}
 .piple{
     margin-left:  200px;
     margin-bottom: 48px; 
+}
+
+@media screen and (max-width:900) {
+   .persons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   } 
+   .person_one{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+   }
+   .person_two{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+   }
+   .person_three{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+   }
 }
