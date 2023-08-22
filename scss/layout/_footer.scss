@@ -1,5 +1,6 @@
 .footer{
     background-color: $BLACK-color;
+    width: 100%;
 }
 .foter_hero{
   background-color: $Peach-color;
@@ -13,7 +14,8 @@ background-repeat: no-repeat;
   font-family: $body-ff;
  color: $WHITE-color;
 margin-top: 16rem;
-
+margin-left: auto;
+margin-right: auto ;
     }
 
     .footer_title {
