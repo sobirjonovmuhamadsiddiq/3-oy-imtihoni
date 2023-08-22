@@ -848,6 +848,10 @@ p {
     display: flex;
   }
 }
+.web_hero {
+  background-color: #E7816B;
+}
+
 .header {
   background-color: #ffffff;
 }
